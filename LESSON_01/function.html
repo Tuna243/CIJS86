@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Function Concepts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #666;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #333;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .code-example {
+      margin-bottom: 40px;
+    }
+
+    .code-example pre {
+      max-width: 600px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+ body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #666;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #333;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .exercise {
+      margin-bottom: 40px;
+    }
+
+    .exercise p {
+      margin-bottom: 10px;
+    }
+
+    .exercise pre {
+      max-width: 600px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+.exercise {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Function Concepts</h1>
+    <p>In this lesson, we will explore some advanced concepts related to JavaScript functions.</p>
+
+    <h2>Function Composition</h2>
+    <p><strong>Definition:</strong> Function composition involves combining multiple functions to create more complex behavior.</p>
+    <div class="code-example">
+      <p><strong>Example:</strong></p>
+      <pre>
+function add(a, b) {
+  return a + b;
+}
+
+function multiplyByTwo(num) {
+  return num * 2;
+}
+
+const result = multiplyByTwo(add(3, 5));
+console.log(result); // Output: 16 (3 + 5 = 8, 8 * 2 = 16)
+      </pre>
+    </div>
+
+    <h2>Higher-Order Functions</h2>
+    <p><strong>Definition:</strong> Higher-order functions are functions that can operate on other functions or return functions.</p>
+    <div class="code-example">
+      <p><strong>Example:</strong></p>
+      <pre>
+function multiplyBy(factor) {
+  return function(num) {
+    return num * factor;
+  };
+}
+
+const multiplyByTwo = multiplyBy(2);
+const result = multiplyByTwo(5);
+console.log(result); // Output: 10 (5 * 2 = 10)
+      </pre>
+    </div>
+
+    <h2>Function Currying</h2>
+    <p><strong>Definition:</strong> Function currying is a technique where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument.</p>
+    <div class="code-example">
+      <p><strong>Example:</strong></p>
+      <pre>
+function multiply(a, b) {
+  return a * b;
+}
+
+const multiplyByTwo = multiply.bind(null, 2);
+const result = multiplyByTwo(5);
+console.log(result); // Output: 10 (2 * 5 = 10)
+      </pre>
+    </div>
+
+    <h2>Immediately Invoked Function Expressions (IIFE)</h2>
+    <p><strong>Definition:</strong> An Immediately Invoked Function Expression is a function that is immediately executed after it is defined.</p>
+    <div class="code-example">
+      <p><strong>Example:</strong></p>
+      <pre>
+(function() {
+  // Code executed immediately
+})();
+
+// IIFE with arguments
+(function(name) {
+  console.log("Hello, " + name + "!");
+})("Alice"); // Output: Hello, Alice!
+      </pre>
+    </div>
+
+    <h2>Function Binding</h2>
+    <p><strong>Definition:</strong> Function binding allows you to create a new function with a specific 'this' value and initial arguments.</p>
+    <div class="code-example">
+      <p><strong>Example:</strong></p>
+      <pre>
+const person = {
+  name: "John",
+  greet: function() {
+    console.log("Hello, " + this.name + "!");
+  }
+};
+
+const greetPerson = person.greet.bind(person);
+greetPerson(); // Output: Hello, John!
+      </pre>
+    </div>
+  </div>
+
+</body>
+</html>
