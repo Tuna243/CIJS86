@@ -1,0 +1,1 @@
+Page chỉ lưu lõi - các trang của web

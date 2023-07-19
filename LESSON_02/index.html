@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+        width: 200px;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        margin: 5px
+        }
+
+        .name {
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        .age {
+        font-size: 14px;
+        font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- <div class="card">
+          <div class="name">Name: Alice</div>
+          <div class="age">Age: 20</div>
+        </div>
+        <div class="card">
+          <div class="name">Name: Bob</div>
+          <div class="age">Age: 20</div>
+        </div>
+        <div class="card">
+          <div class="name">Name: Cris</div>
+          <div class="age">Age: 20</div>
+        </div> -->
+      </div>
+    <script type="module">
+        import user from './user.js';
+        // console.log(user[2]);
+        function personWrapper (user)
+        {
+            const personCard = document.createElement('div');
+            personCard.classList.add("card");
+
+            const personName = document.createElement('div')
+            personName.classList.add("Name");
+            personName.textContent = `Name: ${user.name}`;
+
+            const personAge = document.createElement('div')
+            personAge.classList.add("Age");
+            personAge.textContent = `Age: ${user.age}`;
+
+            personCard.appendChild(personName);
+            personCard.appendChild(personAge);
+        }
+        const personApp = document.getElementById(app);
+        for(let i = 0;i < 3 ; i++)
+        {
+            personApp.appendChild(personWrapper(user[i]));
+        }
+    </script>
+</body>
+</html>
