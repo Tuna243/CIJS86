@@ -79,9 +79,57 @@ function isPrime(n)
 let x = 17;
 console.log(isPrime(x));
 // Exercise 5
-*/
 // --------------------------------------------------------
 // Exercise 6:Fibonacci Sequence
-
+function fibonaci(n)
+{
+    let x=[];
+    x[0] = 0;
+    x[1] = 1;
+    x[2] = 1;
+    for(let i = 3;i < n;i++)
+    {
+        x[i]=x[i - 1] + x[i - 2];
+    }
+    for(let i = 0; i < n;i++)
+    {
+        console.log(x[i],' ');
+    }
+}
+fibonaci(8);
 // Exercise 6
+//----------------------------------------------------
+// Exercise 7: Array Manipulation
+const newArray : n = [1,2,3,4];
+newArray = newArray.map((element : n) => element * 2);
+console.log(newArray);
+// Exercise 7
+//----------------------------------------------------
 
+
+// Exercise 8:Object Manipulation
+
+// Exercise 8
+//Exercise 9: Find the Longest Word
+function findLongestWord(str) {
+    let longestWord = str.split(' ').reduce(function(longest, currentWord) {
+      return currentWord.length > longest.length ? currentWord : longest;
+    }, "");
+    return longestWord.length;
+  }
+  let str = "The quick brown fox jumped over the lazy dog"
+  console.log(findLongestWord(str));
+  
+//Exercise 9
+
+////Exercise 10:Temperature Conversion
+function cToF(celsius) 
+{
+  const cTemp = celsius;
+  const cToFahr = cTemp * 9 / 5 + 32;
+  const message = `${cTemp}\xB0C is ${cToFahr} \xB0F.`;
+    console.log(message);
+}
+cToF(22); 
+// exercise 10
+*/
