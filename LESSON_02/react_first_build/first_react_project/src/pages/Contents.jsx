@@ -1,9 +1,9 @@
 import React from 'react'
-import Text from ''
+// import Text from ''
 const contents = () => {
   return (
     <div>
-      
+      Hello!
     </div>
   )
 }
