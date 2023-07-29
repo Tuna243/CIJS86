@@ -79,3 +79,46 @@ h1 {
 .todo-item button:hover {
     background-color: #b02a37;
 }
+
+
+/* LESSON 5 */
+
+
+/* Additional styles for Timer and Greeting components */
+
+
+/* styles.css */
+
+
+/* ... (previous styles remain unchanged) */
+
+.greeting {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.greeting h2 {
+    margin-bottom: 10px;
+}
+
+.timer {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timer h2 {
+    margin-bottom: 10px;
+}
+
+.timer p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
