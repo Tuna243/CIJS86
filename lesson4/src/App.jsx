@@ -11,7 +11,7 @@ const App = () => {
       <TodoList />
 
       <div className="product-catalog">
-          <ProductCatalog />
+          <ProductCatalog title='User cart'/>
         </div>
 
 

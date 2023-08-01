@@ -2,28 +2,18 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Greeting = () => {
-  const [greeting, setGreeting] = useState('');
+const Greeting = (props) => {
 
-  useEffect(() => {
-    const currentHour = new Date().getHours();
-    let newGreeting;
 
-    if (currentHour >= 5 && currentHour < 12) {
-      newGreeting = 'Good Morning';
-    } else if (currentHour >= 12 && currentHour < 18) {
-      newGreeting = 'Good Afternoon';
-    } else {
-      newGreeting = 'Good Evening';
-    }
 
-    setGreeting(newGreeting);
-  }, []);
-
+// props.time
+// <20 : Good morning
+//  >=20 && <40 : Good afternoon
+// >=40 : Good evening
   return (
     <div className="greeting">
       <h2>Greeting</h2>
-      <p>{greeting}, User!</p>
+      <p>, User!</p>
     </div>
   );
 };
