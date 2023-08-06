@@ -5,12 +5,13 @@ const CartAmount = (props) => {
     const total = prev + current.price;
     return total;
   }, 0);
+//   
   const totalCategory = props.cart.reduce((prev, current) => {
     const oldArr = prev;
     if (oldArr.findIndex((v) => v === current.id)!==-1) {
       return oldArr;
     } else {
-      return [...oldArr, current.id];
+        return [...oldArr, current.id];
     }
   }, []);
 

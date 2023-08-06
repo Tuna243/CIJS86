@@ -122,3 +122,166 @@ h1 {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
+
+/* Scroll to top */
+
+
+/* styles.css */
+
+
+/* ... (previous styles remain unchanged) */
+
+
+/* styles.css */
+
+
+/* ... (previous styles remain unchanged) */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Dark mode styles */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    border: 1px solid #444;
+}
+
+body.dark-mode h1 {
+    color: #fff;
+}
+
+body.dark-mode .product {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .product button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+body.dark-mode .scroll-progress-bar {
+    background-color: #007bff;
+}
+
+body.dark-mode .scroll-progress-bar::before {
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7) 50%, transparent);
+}
+
+body.dark-mode .weather-widget {
+    background-color: #222;
+    border-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .weather-widget h2 {
+    color: #007bff;
+}
+
+body.dark-mode .weather-details {
+    color: #ccc;
+}
+
+body.dark-mode .weather-description {
+    color: #ccc;
+}
+
+body.dark-mode .weather-temp {
+    color: #007bff;
+}
+
+body.dark-mode .weather-unit {
+    color: #ccc;
+}
+
+body.dark-mode .weather-extra {
+    color: #ccc;
+}
+
+body.dark-mode .weather-details hr {
+    border-bottom-color: #444;
+}
+
+body.dark-mode .weather-details p {
+    color: #ccc;
+}
+
+
+/* Light mode styles */
+
+body.light-mode {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+body.light-mode .container {
+    border: 1px solid #ccc;
+}
+
+body.light-mode h1 {
+    color: #007bff;
+}
+
+body.light-mode .product {
+    background-color: #fff;
+    color: #333;
+}
+
+body.light-mode .product button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+body.light-mode .scroll-progress-bar {
+    background-color: #007bff;
+}
+
+body.light-mode .scroll-progress-bar::before {
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.7) 50%, transparent);
+}
+
+body.light-mode .weather-widget {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+
+body.light-mode .weather-widget h2 {
+    color: #007bff;
+}
+
+body.light-mode .weather-details {
+    color: #555;
+}
+
+body.light-mode .weather-description {
+    color: #555;
+}
+
+body.light-mode .weather-temp {
+    color: #007bff;
+}

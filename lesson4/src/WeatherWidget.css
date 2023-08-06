@@ -1,0 +1,63 @@
+/* WeatherWidget.css */
+
+.weather-widget {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.weather-widget h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #007bff;
+    text-align: center;
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.weather-description {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #555;
+}
+
+.weather-temp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.weather-unit {
+    font-size: 16px;
+    color: #555;
+}
+
+.weather-extra {
+    font-size: 14px;
+    color: #777;
+}
+
+.weather-details hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 8px 0;
+}
+
+.weather-details p {
+    margin: 6px 0;
+}

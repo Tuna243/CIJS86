@@ -3,9 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 
 const Greeting = (props) => {
-
-
-
 // props.time
 // <20 : Good morning
 //  >=20 && <40 : Good afternoon

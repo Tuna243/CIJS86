@@ -11,6 +11,7 @@ const ProductCatalog = (props) => {
     { id: 2, name: "Product B", price: 15 },
     { id: 3, name: "Product C", price: 20 },
   ];
+  // 
   const [cart, setCart] = useState([]);
 
   return (
