@@ -8,8 +8,8 @@ const ScrollProgressBar = () => {
   const handleScroll = () => {
     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollTop = window.scrollY;
-    console.log(scrollHeight)
-    console.log(scrollY)
+    // console.log(scrollHeight)
+    // console.log(scrollY)
 
     const progress = (scrollTop / scrollHeight) * 100;
     setScrollPercentage(progress);

@@ -10,7 +10,7 @@ const Greeting = (props) => {
   return (
     <div className="greeting">
       <h2>Greeting</h2>
-      <p>, User!</p>
+      <p> User!</p>
     </div>
   );
 };
